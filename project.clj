@@ -4,8 +4,9 @@
   :license      {:name "Eclipse Public License"
                  :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure       "1.5.1"]
-                 [org.clojure/clojurescript "0.0-1889"]
+                 [org.clojure/clojurescript "0.0-1895"]
                  [com.cemerick/piggieback "0.1.0"]]
+  :repositories {"sonatype-staging" "https://oss.sonatype.org/content/groups/staging/"}
   :profiles     {:dev {:repl-options {:init-ns          piggieback-server
                                       :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
                      :plugins      [[lein-cljsbuild      "0.3.3"]]
